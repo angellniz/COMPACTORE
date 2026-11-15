@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- HEADER -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/categoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <!-- SUBCATEGORY LIST -->
+
+    <TextView
+        android:id="@+id/sub1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skin Care"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:background="@color/light_gray"/>
+
+    <TextView
+        android:id="@+id/sub2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hair Care"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/sub3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Makeup"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:background="@color/light_gray"/>
+
+    <TextView
+        android:id="@+id/sub4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="More"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+
+</LinearLayout>

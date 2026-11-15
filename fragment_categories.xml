@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- HEADER -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+    <!-- CATEGORY LIST -->
+
+    <TextView
+        android:id="@+id/catBeauty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Beauty"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:background="@color/light_gray"/>
+
+
+    <TextView
+        android:id="@+id/catKids"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kids"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+
+
+    <TextView
+        android:id="@+id/catElectronics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Electronics"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:background="@color/light_gray"/>
+
+
+    <TextView
+        android:id="@+id/catBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Books"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+
+
+    <TextView
+        android:id="@+id/catWomen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Women's Wear"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:background="@color/light_gray"/>
+
+
+    <TextView
+        android:id="@+id/catMen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Men's Wear"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+
+</LinearLayout>

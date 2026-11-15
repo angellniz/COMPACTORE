@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#FFFFFF"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/appName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPACTORE"
+                android:textColor="#111111"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/favoritesIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:layout_centerVertical="true"
+                android:src="@android:drawable/btn_star_big_off"/>
+
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@android:drawable/ic_menu_myplaces"/>
+
+        </RelativeLayout>
+
+
+        <!-- PROFILE SECTION -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/profile_placeholder"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome User!"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#111111"
+                android:layout_marginTop="12dp"/>
+
+
+            <!-- LOGIN BUTTONS -->
+
+            <LinearLayout
+                android:id="@+id/loginButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp">
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Log In"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:backgroundTint="#2E2E2E"/>
+
+                <Button
+                    android:id="@+id/signupButton"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Sign Up"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="#6A5ACD"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- MENU OPTIONS -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF">
+
+
+            <TextView
+                android:id="@+id/orders"
+                android:text="Orders"
+                android:textSize="18sp"
+                android:textColor="#222222"
+                android:padding="16dp"
+                android:background="#ECECEC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/coupons"
+                android:text="My Coupons"
+                android:textSize="18sp"
+                android:textColor="#222222"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/wishlist"
+                android:text="Wishlist"
+                android:textSize="18sp"
+                android:textColor="#222222"
+                android:padding="16dp"
+                android:background="#ECECEC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/help"
+                android:text="Help Center"
+                android:textSize="18sp"
+                android:textColor="#222222"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/personalInfo"
+                android:text="Personal Information"
+                android:textSize="18sp"
+                android:textColor="#222222"
+                android:padding="16dp"
+                android:background="#ECECEC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Log Out"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

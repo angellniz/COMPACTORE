@@ -1,0 +1,11 @@
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- UI Shades -->
+    <color name="light_gray">#F2F2F2</color>
+    <color name="medium_gray">#D9D9D9</color>
+    <color name="dark_gray">#4A4A4A</color>
+
+</resources>

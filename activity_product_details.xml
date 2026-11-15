@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- HEADER -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPACTORE"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/favoritesIcon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@android:drawable/btn_star_big_off"
+            android:layout_toStartOf="@id/profileIcon"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+    <!-- PRODUCT CONTENT -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <!-- PRODUCT IMAGE -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/light_gray">
+
+                <ImageView
+                    android:id="@+id/productImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/phone"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- PRODUCT NAME -->
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple iPhone 15"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="14dp"/>
+
+
+            <!-- PRODUCT DESCRIPTION -->
+
+            <TextView
+                android:id="@+id/productDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.1-inch Super Retina display with A16 Bionic chip, dynamic island, advanced dual camera system and all-day battery life."
+                android:textSize="14sp"
+                android:textColor="@color/dark_gray"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="20dp"/>
+
+
+            <!-- PRICE COMPARISON TITLE -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compare Prices"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"/>
+
+
+            <!-- AMAZON -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="@color/medium_gray">
+
+                <TextView
+                    android:id="@+id/amazonPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Amazon   ₹79,900"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:textColor="@color/black"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- FLIPKART -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="@color/medium_gray">
+
+                <TextView
+                    android:id="@+id/flipkartPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Flipkart   ₹78,499"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:textColor="@color/black"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- RELIANCE DIGITAL -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="@color/medium_gray">
+
+                <TextView
+                    android:id="@+id/reliancePrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Reliance Digital   ₹78,900"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:textColor="@color/black"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- CROMA -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="@color/medium_gray">
+
+                <TextView
+                    android:id="@+id/cromaPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Croma   ₹80,200"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:textColor="@color/black"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

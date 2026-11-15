@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "884414362260",
+    "project_id": "compastore-ef389",
+    "storage_bucket": "compastore-ef389.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884414362260:android:d6b464480d5d7159533a81",
+        "android_client_info": {
+          "package_name": "com.example.compactore1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcIKdKBq1IPfSQ4jjv4qQAcDiTpKeXlQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
